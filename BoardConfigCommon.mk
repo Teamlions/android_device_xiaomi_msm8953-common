@@ -169,6 +169,10 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# Power
+TARGET_PROVIDES_POWERHAL := true
+TARGET_HAS_NO_WIFI_STATS := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
@@ -178,10 +182,6 @@ TARGET_USES_MKE2FS := true
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
-
-# Power
-TARGET_HAS_NO_WIFI_STATS := true
-TARGET_USES_INTERACTION_BOOST := true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
@@ -196,9 +196,6 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.qcom
 else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
 endif
-
-# Vendor security Patch
-VENDOR_SECURITY_PATCH := 2019-01-05
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
