@@ -28,6 +28,7 @@
  */
 
 #include <sys/sysinfo.h>
+#include <unistd.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -37,6 +38,16 @@ char const *heapgrowthlimit;
 char const *heapminfree;
 
 using android::init::property_set;
+
+// fingerprint property for rosy
+static void init_finger_print_properties()
+{
+	if (access("/persist/data/fingerprint_version", 0) == -1) {
+		property_set("ro.boot.fingerprint", "fpc");
+	} else {
+		property_set("ro.boot.fingerprint", "goodix");
+	}
+}
 
 void check_device()
 {
@@ -58,6 +69,7 @@ void check_device()
 void vendor_load_properties()
 {
     check_device();
+    init_finger_print_properties();
 
     property_set("dalvik.vm.heapstartsize", "16m");
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
