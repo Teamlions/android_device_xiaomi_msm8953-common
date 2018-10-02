@@ -108,6 +108,10 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     Snap
 
+# Offline Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
@@ -172,10 +176,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
-
-# Healthd
-PRODUCT_PACKAGES += \
-    chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
