@@ -396,4 +396,4 @@ firmware_directories /vendor/firmware_mnt/image/
 # lirc
 /dev/lirc0                0660   system     system
 /dev/peel_ir              0660   system     system
-
+/dev/spidev7.1            0660   system     system
