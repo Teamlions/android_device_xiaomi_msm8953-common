@@ -124,4 +124,9 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", "0.75");
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", "8m");
+    property_override("ro.product.model", "Redmi 5");
+    property_override("ro.product.brand", "Xiaomi");
+    property_override("ro.product.manufacturer", "Xiaomi");
+    property_override("ro.build.description", "rosy-user 7.1.2 N2G47H V9.2.3.0.NDAMIEK release-keys");
+    property_override("ro.build.fingerprint", "Xiaomi/rosy/rosy:7.1.2/N2G47H/V9.2.3.0.NDAMIEK:user/release-keys");
 }
