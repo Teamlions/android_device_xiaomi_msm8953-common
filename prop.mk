@@ -29,7 +29,8 @@ vendor.audio.pp.asphere.enabled=false \
 vendor.audio.safx.pbe.enabled=true \
 vendor.tunnel.audio.encode=false \
 vendor.voice.conc.fallbackpath=deep-buffer \
-vendor.voice.path.for.pcm.voip=true
+vendor.voice.path.for.pcm.voip=true \
+persist.audio.dirac.speaker=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
