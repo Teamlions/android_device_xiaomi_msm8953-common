@@ -136,9 +136,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
-    libtinyxml \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.0_vendor
+    libtinyxml
 
 # Doze mode
 PRODUCT_PACKAGES += \
