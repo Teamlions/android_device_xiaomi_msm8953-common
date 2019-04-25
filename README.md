@@ -1,4 +1,4 @@
-Copyright (C) 2017 - The LineageOS Project
+Copyright (C) 2019 - The LineageOS Project
 
-Common device tree for Xiaomi MSM8953 based devices
+Common device tree for Xiaomi MSM8953(SDM450 SOC) based devices
 ==============
