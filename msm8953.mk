@@ -320,8 +320,11 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2 \
+    libprotobuf-cpp-full
+
+# Telephony
+PRODUCT_PACKAGES += \
     telephony-ext \
     ims-ext-common
 
