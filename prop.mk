@@ -40,7 +40,9 @@ vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
 vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
-vendor.voice.voip.conc.disabled=true
+vendor.voice.voip.conc.disabled=true \
+persist.call_recording.enabled=true \
+persist.call_recording.src=4
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
