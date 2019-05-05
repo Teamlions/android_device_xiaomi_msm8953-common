@@ -30,7 +30,9 @@ vendor.audio.safx.pbe.enabled=true \
 vendor.tunnel.audio.encode=false \
 vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
-persist.audio.dirac.speaker=true
+persist.audio.dirac.speaker=true \
+persist.call_recording.enabled=true \
+persist.call_recording.src=4
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
