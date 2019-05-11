@@ -46,6 +46,8 @@
          backlight values for LUX levels between these control points.
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
+        <item>0</item>     <!-- midnight -->
+        <item>2</item>     <!-- midnight -->
         <item>8</item>     <!-- twilight -->
         <item>50</item>     <!-- dim indoor -->
         <item>100</item>    <!-- home -->
