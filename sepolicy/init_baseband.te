@@ -7,8 +7,6 @@ init_daemon_domain(init_baseband)
 # Shell script needs to execute /vendor/bin/sh
 allow init_baseband vendor_shell_exec:file { rx_file_perms entrypoint };
 allow init_baseband vendor_toolbox_exec:file rx_file_perms;
-allow init_baseband init_baseband:capability { dac_override };
-allow init_baseband init_baseband:capability { dac_read_search };
 
 # Allow reading modem firmware
 r_dir_file(init_baseband, firmware_file)
