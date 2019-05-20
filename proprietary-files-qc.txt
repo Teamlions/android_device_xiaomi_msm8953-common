@@ -439,8 +439,6 @@ etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
 framework/QtiTelephonyServicelibrary.jar|1df2f89ffb3aedc36e1c2ca7cafbf73a6a06b3fb
 framework/qcrilhook.jar|784df5e6aa9df0127700b9a6f1083440ebfac057
 framework/qti-telephony-common.jar|9187f7a9995ba7e65eb99539aba1a5720637c3b3
-lib/android.hardware.secure_element@1.0.so|6bdefa9961399952bec9ad36e91faa54c3337d12
-lib/android.hardware.radio.config@1.0.so|aa260b05d3704f247ae622fc29752838db3384ca
 lib/vendor.qti.hardware.radio.am@1.0.so|9c8ec1cdcc576258966fcd9d2bc18cb273d242b2
 lib/vendor.qti.hardware.radio.ims@1.0.so|a3c3a76b1d49d58429dda812f57878749ed27c92
 lib/vendor.qti.hardware.radio.ims@1.1.so|1c6cd4557f5370fd513440d9eda02d5e0b9fa953
@@ -455,8 +453,6 @@ lib/vendor.qti.hardware.radio.uim@1.0.so|a32848b4522463165b3d2be30244c8123169db3
 lib/vendor.qti.hardware.radio.uim@1.1.so|bb57f63cd93fa632185b3c7b2f24c54a5cea8503
 lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so|6fed5c85c801a5faf7fbfbf87f88f28fe1b2cb11
 lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so|a62c40faae77f80b5b96283e3dfc4c67b79ae019
-lib64/android.hardware.radio.config@1.0.so|eba0b3db672de083e8c27051c43942eb87b8ca42
-lib64/android.hardware.secure_element@1.0.so|f5a6b37a7d29e4459d598f2f1a2429a08c297178
 lib64/vendor.qti.hardware.radio.am@1.0.so|ef6d56f7aa6ff13866ccb0c31c8ef96de503c17c
 lib64/vendor.qti.hardware.radio.ims@1.0.so|da51d4af0363ddca76292dde82857fb4862f4cd2
 lib64/vendor.qti.hardware.radio.ims@1.1.so|fd7bf0ab14637f67d56ba90aeb07030a138c1996
@@ -541,6 +537,13 @@ vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|8ad1c06563a4e5cd57eec16ad
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|f3a3051e4a904268e349a8b5adc91b748e8e0ade
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|ab552724f7d723a70a4e730dba52ab220d33a33e
 vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
+
+# Radio - Qcrild - from tissot
+vendor/bin/hw/qcrild
+vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
+vendor/lib64/libqcrilFramework.so
+vendor/lib64/libril-qc-hal-qmi.so
+vendor/lib64/qcrild_librilutils.so
 
 # Radio - IMS - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 -priv-app/ims/ims.apk|0705902307d7158d7cc2ecb01e8acd9425ec9623
