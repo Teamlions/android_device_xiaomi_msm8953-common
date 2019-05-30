@@ -545,8 +545,10 @@ vendor/lib64/libqcrilFramework.so
 vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/qcrild_librilutils.so
 
+# Radio - IMS - from tissot
+-priv-app/ims/ims.apk
+
 # Radio - IMS - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
--priv-app/ims/ims.apk|0705902307d7158d7cc2ecb01e8acd9425ec9623
 -app/imssettings/imssettings.apk|20d9b2c3f5939d4bfa7c03b5383d0cf03dbbc39e
 -app/uceShimService/uceShimService.apk|d2ecdb607749b0496664db52b706e9340bd9b9f0
 etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|8d25bd7b79baf266950eb484c1a28817f891aec2
