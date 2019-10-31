@@ -39,7 +39,7 @@ char const *heapminfree;
 
 using android::init::property_set;
 
-// fingerprint property for rosy
+// fingerprint property for rosy and vince
 static void init_finger_print_properties()
 {
 	if (access("/persist/data/fingerprint_version", 0) == -1) {
